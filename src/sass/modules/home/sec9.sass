@@ -1,0 +1,64 @@
+.sec9
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 5vh 7vw
+    gap: 5vh
+    .sec9-header
+        text-align: center
+        p
+            color: #5f6265
+        h1
+            font-family: amatic
+            span
+                font-family: amatic
+                color: #ce1212
+    .sec9-content
+        width: 75vw
+        height: 70vh
+        display: flex
+        .sec9-content-img
+            width: 30%
+            height: 100%
+        .sec9-content-form
+            padding: 30px
+            width: 70%
+            height: 100%
+            background: #f8f8f8
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            gap: 3vh
+            .inputs
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                gap: 1vw
+                input
+                    width: 15vw
+                    padding: 5px
+            textarea
+                width: 97.5%
+            button
+                border: none
+                color: white
+                background: #ce1212
+                padding: 14px 60px
+                border-radius: 4px
+
+@media (max-width: 428px)
+    .sec9
+        .sec9-content
+            flex-direction: column
+            .sec9-content-img
+                width: 100%
+            .sec9-content-form
+                width: 100%
+                .inputs
+                    flex-direction: column
+                    input
+                        width: 100%
+                textarea
+                    width: 100%
