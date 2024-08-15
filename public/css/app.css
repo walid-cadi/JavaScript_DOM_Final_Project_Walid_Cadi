@@ -6,6 +6,10 @@
   font-family: sans-serif;
 }
 
+@font-face {
+  font-family: "amatic";
+  src: url("../../../../public/fonts/AmaticSC-bold.ttf");
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11855,8 +11859,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15vw;
-  width: 100vw;
+  gap: 10vw;
+  width: 100%;
   padding: 20px 0;
   background: white;
   position: sticky;
@@ -11985,6 +11989,74 @@ nav .right-nav .right-nav-btn button {
   }
   #switch:checked + .right-nav-links {
     top: 0;
+  }
+}
+.sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10vh 5vw;
+  background: #f2f2f2;
+}
+.sec1 .left-sec1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.sec1 .left-sec1 .left-sec1-text {
+  width: 30vw;
+}
+.sec1 .left-sec1 .left-sec1-text h1, .sec1 .left-sec1 .left-sec1-text .h1 {
+  font-family: amatic;
+  font-size: 60px;
+}
+.sec1 .left-sec1 .left-sec1-text h5, .sec1 .left-sec1 .left-sec1-text .h5 {
+  color: #5f6265;
+}
+.sec1 .left-sec1 .left-sec1-btn {
+  display: flex;
+  gap: 2vw;
+}
+.sec1 .left-sec1 .left-sec1-btn .btn1 {
+  border: none;
+  padding: 8px 26px;
+  border-radius: 50px;
+  background: #ce1212;
+  color: white;
+  cursor: pointer;
+}
+.sec1 .left-sec1 .left-sec1-btn .btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: none;
+  padding: 8px 26px;
+  color: black;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.sec1 .left-sec1 .left-sec1-btn .btn2 i {
+  color: #ce121c;
+  font-size: xx-large;
+}
+.sec1 .left-sec1 .left-sec1-btn .btn2:hover {
+  color: #ce1212;
+}
+
+@media (max-width: 428px) {
+  .sec1 {
+    flex-direction: column-reverse;
+    gap: 5vh;
+  }
+  .sec1 .left-sec1 {
+    width: 90vw;
+  }
+  .sec1 .left-sec1 .left-sec1-text {
+    width: 100%;
+  }
+  .sec1 .right-sec1 img {
+    width: 350px;
   }
 }
 
