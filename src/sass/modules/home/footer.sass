@@ -1,0 +1,53 @@
+footer
+    background: #1f1f24
+    padding: 5vh 7vw
+    display: flex
+    align-items: center
+    flex-direction: column
+    color: white
+    gap: 1vh
+    .info
+        display: flex
+        align-items: start
+        justify-content: space-evenly
+        gap: 3vw
+        border-bottom: 1px solid white
+        .info-card
+            display: flex
+            gap: 2vw
+            width: 18vw
+            i
+                color: #ce1212
+            .info-text
+                display: flex
+                flex-direction: column
+                gap: 1vh
+            
+        .info-icon
+            display: flex
+            flex-direction: column
+            gap: 1vh
+            .icons
+                display: flex
+                gap: 1vw
+                i
+                    &:hover
+                        color: #ce1212
+    .copyright
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        p
+            span
+                color: #ce1212
+
+@media (max-width: 428px)
+    footer
+        margin-top: 70vh
+        .info
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .info-card
+                width: 50vw
