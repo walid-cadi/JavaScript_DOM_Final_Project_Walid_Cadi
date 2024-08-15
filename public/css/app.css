@@ -12336,6 +12336,60 @@ nav .right-nav .right-nav-btn button {
   font-family: amatic;
   color: #ce1212;
 }
+.sec6 .sec6-carousel {
+  display: flex;
+  width: 60vw;
+  overflow: hidden;
+}
+.sec6 .sec6-carousel .box-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.sec6 .sec6-carousel .box-carousel .slide {
+  min-width: 100%;
+  border-left: 3px solid #ce1212;
+  padding-left: 15px;
+}
+.sec6 .sec6-carousel .box-carousel .slide .content {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  width: 100%;
+  height: 100%;
+}
+.sec6 .sec6-carousel .box-carousel .slide .content .content-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.sec6 .sec6-carousel .box-carousel .slide .content .content-text h3, .sec6 .sec6-carousel .box-carousel .slide .content .content-text .h3 {
+  font-family: amatic;
+}
+.sec6 .sec6-carousel .box-carousel .slide .content .content-text span {
+  color: #5f6265;
+}
+.sec6 .sec6-carousel .box-carousel .slide .content .content-img {
+  width: 150px;
+  height: 150px;
+}
+.sec6 .sec6-carousel .box-carousel .slide .content .content-img img {
+  border-radius: 50%;
+}
+
+@media (max-width: 428px) {
+  .sec6 .sec6-carousel {
+    width: 100vw;
+  }
+  .sec6 .box-carousel .slide {
+    padding: 0px;
+  }
+  .sec6 .box-carousel .slide .content {
+    flex-direction: column;
+  }
+  .sec6 .box-carousel .slide .content .content-text {
+    width: 100%;
+  }
+}
 .sec8 {
   display: flex;
   flex-direction: column;
@@ -12413,7 +12467,7 @@ nav .right-nav .right-nav-btn button {
   }
   .sec8 .sec8-content .card .card-img {
     width: 90vw;
-    height: 55vh;
+    height: 70vh;
   }
 }
 
