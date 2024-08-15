@@ -9,7 +9,40 @@
 </head>
 
 <body>
-    
+    <nav>
+        <div class="left-nav">
+            <a href="">
+                <h1>Yummy <span>.</span></h1>
+            </a>
+        </div>
+        <div class="right-nav">
+            <label class="menu ic" data-icon="switcher" for="switcher"><i class="bi bi-list"></i></label>
+            <input id="switcher" type="checkbox">
+            <div class="right-nav-links">
+                <label class="close ic" data-icon="switcher" for="switcher"><i class="bi bi-x-lg"></i></label>
+                <a href="home">Home</a>
+                <a href="about">About</a>
+                <a href="menu">Menu</a>
+                <a href="events">Events</a>
+                <a href="chefs">Chefs</a>
+                <a href="gallery">Gallery</a>
+                <a href="contact">Contact</a>
+            </div>
+            <div class="right-nav-btn"><button class="modal-btn" data-modal="modal1">LogIn</button></div>
+        </div>
+    </nav>
+    <!-- modal -->
+    <div id="modal1" class="modal-container">
+        <div class="modal-parent">
+            <div class="content-modal">
+                <input type="email" placeholder="please enter your email">
+                <input type="password" placeholder="please enter your password">
+            </div>
+            <div class="btn-modal">
+                <button class="close-modal">LogIn</button>
+            </div>
+        </div>
+    </div>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./public/js/app.js"></script>
 </body>
