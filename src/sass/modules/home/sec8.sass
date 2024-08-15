@@ -1,0 +1,61 @@
+.sec8
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 5vh 7vw
+    gap: 5vh
+    .sec8-header
+        text-align: center
+        p
+            color: #5f6265
+        h1
+            font-family: amatic
+            span
+                font-family: amatic
+                color: #ce1212
+    .sec8-content
+        display: flex
+        align-items: center
+        gap: 3vw
+        .card
+            border: none
+            &:hover
+                transform: scale(1.1)
+                transition: 0.6s
+            .card-img
+                width: 25vw
+                height: 55vh
+                position: relative
+                img
+                    position: absolute
+                    bottom: 0
+            .card-content
+                padding: 30px
+                text-align: center
+                h5
+                    color: #5f6265
+                p
+                    color: #5f6265
+.chef1
+    background-image: url(../images/chefs/chefs-1.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+.chef2
+    background-image: url(../images/chefs/chefs-2.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+.chef3
+    background-image: url(../images/chefs/chefs-3.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+
+
+@media (max-width: 428px)
+    .sec8
+        .sec8-content
+            flex-direction: column
+            .card
+                .card-img
+                    width: 90vw
+                    height: 70vh

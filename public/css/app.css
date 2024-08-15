@@ -12315,4 +12315,106 @@ nav .right-nav .right-nav-btn button {
   color: #ce1212;
 }
 
+.sec6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 5vh 7vw;
+}
+.sec6 .sec6-header {
+  text-align: center;
+}
+.sec6 .sec6-header p {
+  color: #5f6265;
+}
+.sec6 .sec6-header h1, .sec6 .sec6-header .h1 {
+  font-family: amatic;
+}
+.sec6 .sec6-header h1 span, .sec6 .sec6-header .h1 span {
+  font-family: amatic;
+  color: #ce1212;
+}
+.sec8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 7vw;
+  gap: 5vh;
+}
+.sec8 .sec8-header {
+  text-align: center;
+}
+.sec8 .sec8-header p {
+  color: #5f6265;
+}
+.sec8 .sec8-header h1, .sec8 .sec8-header .h1 {
+  font-family: amatic;
+}
+.sec8 .sec8-header h1 span, .sec8 .sec8-header .h1 span {
+  font-family: amatic;
+  color: #ce1212;
+}
+.sec8 .sec8-content {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+.sec8 .sec8-content .card {
+  border: none;
+}
+.sec8 .sec8-content .card:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+.sec8 .sec8-content .card .card-img {
+  width: 25vw;
+  height: 55vh;
+  position: relative;
+}
+.sec8 .sec8-content .card .card-img img {
+  position: absolute;
+  bottom: 0;
+}
+.sec8 .sec8-content .card .card-content {
+  padding: 30px;
+  text-align: center;
+}
+.sec8 .sec8-content .card .card-content h5, .sec8 .sec8-content .card .card-content .h5 {
+  color: #5f6265;
+}
+.sec8 .sec8-content .card .card-content p {
+  color: #5f6265;
+}
+
+.chef1 {
+  background-image: url(../images/chefs/chefs-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chef2 {
+  background-image: url(../images/chefs/chefs-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chef3 {
+  background-image: url(../images/chefs/chefs-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 428px) {
+  .sec8 .sec8-content {
+    flex-direction: column;
+  }
+  .sec8 .sec8-content .card .card-img {
+    width: 90vw;
+    height: 55vh;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
