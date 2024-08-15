@@ -33,3 +33,24 @@ nav_icone.forEach((icon) => {
     }
   });
 });
+
+//menu
+
+let menu = document.querySelectorAll(".menu-btn");
+let a = document.querySelector(".aa");
+console.log(a.textContent);
+
+menu.forEach((el) => {
+  el.addEventListener("click", () => {
+    console.log(el.textContent);
+    if (el.textContent == "Starters") {
+      a.textContent = "Starters";
+    } else if (el.textContent == "Breakfast") {
+      a.textContent = "Breakfast";
+    } else if (el.textContent == "Lunch") {
+      a.textContent = "Lunch";
+    } else if (el.textContent == "Dinner") {
+      a.textContent = "Dinner";
+    }
+  });
+});
