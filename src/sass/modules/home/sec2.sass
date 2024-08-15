@@ -1,0 +1,57 @@
+.sec2
+    display: flex
+    flex-direction: column
+    gap: 3vh
+    padding: 5vh 7vw
+    .sec2-header
+        text-align: center
+        p
+            color: #5f6265
+        h1
+            font-family: amatic
+            span
+                font-family: amatic
+                color: #ce1212
+    .sec2-content
+        display: flex
+        gap: 5vw
+        .left-content
+            width: 50vw
+            display: flex
+            flex-direction: column
+            gap: 2vh
+            .booktable
+                padding: 3vh 5vw
+                text-align: center
+                border: 5px solid #636669
+                h1
+                    color: #ce1212
+        .right-content
+            width: 30vw
+            display: flex
+            flex-direction: column
+            .right-content-text
+                display: flex
+                flex-direction: column
+                gap: 1vh
+                h5
+                    color: #5f6265
+                .txt
+                    display: flex
+                    align-items: start
+                    gap: 1vw
+                    i
+                        color: #ce1212
+            .right-content-vd
+                width: 100%
+
+@media (max-width: 428px)
+    .sec2
+        width: 100vw
+        .sec2-content
+            flex-direction: column
+            width: 100%
+            .left-content
+                width: 100%
+            .right-content
+                width: 100%

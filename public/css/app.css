@@ -12059,5 +12059,82 @@ nav .right-nav .right-nav-btn button {
     width: 350px;
   }
 }
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding: 5vh 7vw;
+}
+.sec2 .sec2-header {
+  text-align: center;
+}
+.sec2 .sec2-header p {
+  color: #5f6265;
+}
+.sec2 .sec2-header h1, .sec2 .sec2-header .h1 {
+  font-family: amatic;
+}
+.sec2 .sec2-header h1 span, .sec2 .sec2-header .h1 span {
+  font-family: amatic;
+  color: #ce1212;
+}
+.sec2 .sec2-content {
+  display: flex;
+  gap: 5vw;
+}
+.sec2 .sec2-content .left-content {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.sec2 .sec2-content .left-content .booktable {
+  padding: 3vh 5vw;
+  text-align: center;
+  border: 5px solid #636669;
+}
+.sec2 .sec2-content .left-content .booktable h1, .sec2 .sec2-content .left-content .booktable .h1 {
+  color: #ce1212;
+}
+.sec2 .sec2-content .right-content {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+.sec2 .sec2-content .right-content .right-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.sec2 .sec2-content .right-content .right-content-text h5, .sec2 .sec2-content .right-content .right-content-text .h5 {
+  color: #5f6265;
+}
+.sec2 .sec2-content .right-content .right-content-text .txt {
+  display: flex;
+  align-items: start;
+  gap: 1vw;
+}
+.sec2 .sec2-content .right-content .right-content-text .txt i {
+  color: #ce1212;
+}
+.sec2 .sec2-content .right-content .right-content-vd {
+  width: 100%;
+}
+
+@media (max-width: 428px) {
+  .sec2 {
+    width: 100vw;
+  }
+  .sec2 .sec2-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sec2 .sec2-content .left-content {
+    width: 100%;
+  }
+  .sec2 .sec2-content .right-content {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
