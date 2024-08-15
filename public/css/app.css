@@ -12136,5 +12136,87 @@ nav .right-nav .right-nav-btn button {
     width: 100%;
   }
 }
+.sec3 {
+  padding: 5vh 7vw;
+  background: #f2f2f2;
+  display: flex;
+  gap: 5vw;
+}
+.sec3 .left-sec3 {
+  padding: 20px;
+  width: 25vw;
+  background: #ce1212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.sec3 .left-sec3 button {
+  width: 10vw;
+  margin: auto;
+  border: none;
+  padding: 8px 26px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1254901961);
+  color: white;
+  cursor: pointer;
+}
+.sec3 .left-sec3 button:hover {
+  background: #fff;
+  color: #ce1212;
+  transition: 0.5s;
+}
+.sec3 .right-sec3 {
+  display: flex;
+  gap: 5vw;
+}
+.sec3 .right-sec3 .right-sec3-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15vw;
+  text-align: center;
+  gap: 5vh;
+  padding: 30px 20px;
+  background: #fff;
+}
+.sec3 .right-sec3 .right-sec3-card div {
+  background: rgba(206, 18, 18, 0.0588235294);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.sec3 .right-sec3 .right-sec3-card div i {
+  color: #ce1212;
+  font-size: 30px;
+}
+.sec3 .right-sec3:hover div {
+  background: #ce1212;
+}
+.sec3 .right-sec3:hover div i {
+  color: #fff;
+}
+
+@media (max-width: 428px) {
+  .sec3 {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .sec3 .left-sec3 {
+    width: 100%;
+  }
+  .sec3 .left-sec3 button {
+    width: 50%;
+  }
+  .sec3 .right-sec3 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sec3 .right-sec3 .right-sec3-card {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
