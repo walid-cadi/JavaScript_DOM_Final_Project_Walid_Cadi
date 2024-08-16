@@ -49,7 +49,7 @@ let a = document.querySelector(".aa");
 
 menu.forEach((el) => {
   el.addEventListener("click", () => {
-    console.log(el.textContent);
+    // console.log(el.textContent);
     if (el.textContent == "Starters") {
       a.textContent = "Starters";
     } else if (el.textContent == "Breakfast") {
@@ -62,8 +62,10 @@ menu.forEach((el) => {
   });
 });
 
+// carousel 1
+
 let nextBtns = document.querySelectorAll(".next");
-let previousBtns = document.querySelectorAll(".previous");
+// let previousBtns = document.querySelectorAll(".previous");
 let containers = document.querySelectorAll(".carousel-container");
 
 let currentIndex = 0;
@@ -86,10 +88,10 @@ const slideImage = (index, myBtn) => {
         //console.log(index);
       }
 
-      //indicators.forEach((indicator) => {
+      // indicators.forEach((indicator) => {
       //  indicator.classList.remove("activeIndicator");
-      //});
-      //indicators[index].classList.add("activeIndicator");
+      // });
+      // indicators[index].classList.add("activeIndicator");
 
       camera.style.transform = `translateX(-${slideWidth * index}px)`;
       currentIndex = index;
@@ -98,28 +100,69 @@ const slideImage = (index, myBtn) => {
 };
 
 nextBtns.forEach((next) => {
-  next.addEventListener("click", (event) => {
-    slideImage(currentIndex + 1, event.target);
+  next.addEventListener("click", (e) => {
+    slideImage(currentIndex + 1, e.target);
     //console.log(event.target);
     //console.log(currentIndex + 1);
   });
 });
 
-previousBtns.forEach((previous) => {
-  previous.addEventListener("click", (event) => {
-    slideImage(currentIndex - 1, event.target);
+
+//* auto slide
+containers.forEach((container) => {
+  if (container.getAttribute("autoslide")) {
+    let nextBtn = container.querySelector(".next");
+    setInterval(() => {
+      nextBtn.click();
+    }, 3000);
+  }
+});
+
+
+
+// carousel 2
+let nextBtns2 = document.querySelectorAll(".next2");
+let containers2 = document.querySelectorAll(".carousel-container2");
+let currentIndex2 = 0;
+
+
+const slideImage2 = (index, myBtn) => {
+  let carouselBtnAttribute2 = myBtn.getAttribute("carouselBtn2");
+  //console.log(carouselBtnAttribute);
+
+  containers2.forEach((container) => {
+    if (container.id == carouselBtnAttribute2) {
+      let slides = container.querySelectorAll(".slide2");
+      let camera = container.querySelector(".box-carousel2");
+      let slideWidth = slides[0].clientWidth;
+      //let indicators = container.querySelectorAll(".indicator");
+
+      if (index < 0) {
+        index = slides.length - 1;
+        //console.log(index);
+      } else if (index >= slides.length) {
+        index = 0;
+        //console.log(index);
+      }
+      camera.style.transform = `translateX(-${slideWidth * index}px)`;
+      currentIndex = index;
+    }
+  });
+};
+
+nextBtns2.forEach((next) => {
+  next.addEventListener("click", (e) => {
+    slideImage2(currentIndex + 1, e.target);
     //console.log(event.target);
-    //console.log(currentIndex - 1);
+    //console.log(currentIndex + 1);
   });
 });
 
 //* auto slide
-containers.forEach((container) => {
-  //* check wach  l element 3ando attribute auto slide
+containers2.forEach((container) => {
   if (container.getAttribute("autoslide")) {
-    let nextBtn = container.querySelector(".next");
+    let nextBtn = container.querySelector(".next2");
     setInterval(() => {
-      //* method  kanwarek  biha  3la  btn
       nextBtn.click();
     }, 3000);
   }

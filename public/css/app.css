@@ -12334,63 +12334,115 @@ nav .right-nav .right-nav-btn button {
   font-family: amatic;
   color: #ce1212;
 }
-.sec6 .carousel-container {
+.sec6 .sec6-carousel {
   display: flex;
   width: 60vw;
   overflow: hidden;
 }
-.sec6 .carousel-container .box-carousel {
+.sec6 .sec6-carousel .carousel-style {
   display: flex;
   transition: transform 0.5s ease;
 }
-.sec6 .carousel-container .box-carousel button {
+.sec6 .sec6-carousel .carousel-style button {
   display: none;
 }
-.sec6 .carousel-container .box-carousel .slide {
+.sec6 .sec6-carousel .carousel-style .slide1 {
   min-width: 100%;
   border-left: 3px solid #ce1212;
   padding-left: 15px;
 }
-.sec6 .carousel-container .box-carousel .slide .content {
+.sec6 .sec6-carousel .carousel-style .slide1 .content {
   display: flex;
   align-items: center;
   gap: 5vw;
   width: 100%;
   height: 100%;
 }
-.sec6 .carousel-container .box-carousel .slide .content .content-text {
+.sec6 .sec6-carousel .carousel-style .slide1 .content .content-text {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
-.sec6 .carousel-container .box-carousel .slide .content .content-text h3, .sec6 .carousel-container .box-carousel .slide .content .content-text .h3 {
+.sec6 .sec6-carousel .carousel-style .slide1 .content .content-text h3, .sec6 .sec6-carousel .carousel-style .slide1 .content .content-text .h3 {
   font-family: amatic;
 }
-.sec6 .carousel-container .box-carousel .slide .content .content-text span {
+.sec6 .sec6-carousel .carousel-style .slide1 .content .content-text span {
   color: #5f6265;
 }
-.sec6 .carousel-container .box-carousel .slide .content .content-img {
+.sec6 .sec6-carousel .carousel-style .slide1 .content .content-img {
   width: 150px;
   height: 150px;
 }
-.sec6 .carousel-container .box-carousel .slide .content .content-img img {
+.sec6 .sec6-carousel .carousel-style .slide1 .content .content-img img {
   border-radius: 50%;
 }
 
 @media (max-width: 428px) {
   .sec6 .sec6-carousel {
+    display: block;
     width: 100vw;
   }
-  .sec6 .box-carousel .slide {
-    padding: 0px;
-  }
-  .sec6 .box-carousel .slide .content {
+  .sec6 .carousel-style .slide1 .content {
     flex-direction: column;
   }
-  .sec6 .box-carousel .slide .content .content-text {
-    width: 100%;
+  .sec6 .carousel-style .slide1 .content .content-text {
+    width: 50%;
   }
 }
+.sec7 {
+  margin-top: 3vh;
+  background: #ffffff;
+  height: 80vh;
+  overflow: hidden;
+}
+.sec7 .sec7-carousel {
+  display: flex;
+  width: 33vw;
+  height: 100%;
+}
+.sec7 .sec7-carousel .carousel-style2 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.sec7 .sec7-carousel .carousel-style2 button {
+  display: none;
+}
+.sec7 .sec7-carousel .carousel-style2 .slide-img1 {
+  background-image: url(../images/events-1.jpg);
+  background-size: cover;
+}
+.sec7 .sec7-carousel .carousel-style2 .slide-img2 {
+  background-image: url(../images/events-2.jpg);
+  background-size: cover;
+}
+.sec7 .sec7-carousel .carousel-style2 .slide-img3 {
+  background-image: url(../images/events-3.jpg);
+  background-size: cover;
+}
+.sec7 .sec7-carousel .carousel-style2 .slide-img4 {
+  background-image: url(../images/events-4.jpg);
+  background-size: cover;
+}
+.sec7 .sec7-carousel .carousel-style2 .slide-2 {
+  min-width: 100%;
+}
+.sec7 .sec7-carousel .carousel-style2 .slide-2 .slide-content {
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.sec7 .sec7-carousel .carousel-style2 .slide-2 .slide-content h3, .sec7 .sec7-carousel .carousel-style2 .slide-2 .slide-content .h3 {
+  font-family: amatic;
+}
+.sec7 .sec7-carousel .carousel-style2 .slide-2 .slide-content h1, .sec7 .sec7-carousel .carousel-style2 .slide-2 .slide-content .h1 {
+  width: 90px;
+  border-bottom: 2px solid #ce1212;
+}
+
 .sec8 {
   display: flex;
   flex-direction: column;
@@ -12570,6 +12622,9 @@ nav .right-nav .right-nav-btn button {
 .sec11 .sec11-form {
   box-shadow: 2px 2px 5px #888888;
 }
+.sec11 .sec11-form .sec11-form-inputs input {
+  width: 50%;
+}
 
 .red {
   color: #ce1212;
@@ -12601,8 +12656,13 @@ nav .right-nav .right-nav-btn button {
   .sec11 .sec11-info {
     margin: 0;
   }
-  .sec11 .sec11-form:first-child {
+  .sec11 .sec11-info .sec11-info-card {
+    width: 100%;
+  }
+  .sec11 .sec11-form .sec11-form-inputs {
     flex-direction: column;
+  }
+  .sec11 .sec11-form .sec11-form-inputs input {
     width: 100%;
   }
 }
@@ -12659,7 +12719,7 @@ footer .copyright p span {
 
 @media (max-width: 428px) {
   footer {
-    margin-top: 70vh;
+    margin-top: 0vh;
   }
   footer .info {
     flex-direction: column;
