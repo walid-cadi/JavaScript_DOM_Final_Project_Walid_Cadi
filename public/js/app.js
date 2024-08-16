@@ -145,7 +145,7 @@ const slideImage2 = (index, myBtn) => {
         //console.log(index);
       }
       camera.style.transform = `translateX(-${slideWidth * index}px)`;
-      currentIndex = index;
+      currentIndex2 = index;
     }
   });
 };
@@ -160,7 +160,7 @@ nextBtns2.forEach((next) => {
 
 //* auto slide
 containers2.forEach((container) => {
-  if (container.getAttribute("autoslide")) {
+  if (container.getAttribute("autoslide2")) {
     let nextBtn = container.querySelector(".next2");
     setInterval(() => {
       nextBtn.click();
