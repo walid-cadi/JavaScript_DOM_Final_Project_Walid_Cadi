@@ -21,24 +21,31 @@ btns.forEach((btn) => {
 });
 
 // navbar responsive
-let nav_icone = document.querySelectorAll(".ic");
-let nav_links = document.querySelectorAll(".right-nav-links");
 
-nav_icone.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    if (icon.classList.contains("menu")) {
-      nav_links.style.top = "0";
-    } else if (icon.classList.contains("close")) {
-      nav_links.style.top = "-500%";
+let nav_icone = document.querySelectorAll(".ic");
+// console.log(nav_icone);
+let nav_links = document.querySelector(".right-nav-links");
+//console.log(nav_links);
+
+nav_icone.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    let attribute = btn.getAttribute("data-icon");
+    if (attribute == "menu") {
+      nav_links.style.left = "2vw"
+    }
+    else if (attribute == "close") {
+      nav_links.style.left = "-500%";
     }
   });
 });
+
+
 
 //menu
 
 let menu = document.querySelectorAll(".menu-btn");
 let a = document.querySelector(".aa");
-console.log(a.textContent);
+//console.log(a.textContent);
 
 menu.forEach((el) => {
   el.addEventListener("click", () => {
@@ -59,11 +66,10 @@ let nextBtns = document.querySelectorAll(".next");
 let previousBtns = document.querySelectorAll(".previous");
 let containers = document.querySelectorAll(".carousel-container");
 
-
 let currentIndex = 0;
 const slideImage = (index, myBtn) => {
   let carouselBtnAttribute = myBtn.getAttribute("carouselBtn");
-  console.log(carouselBtnAttribute);
+  //console.log(carouselBtnAttribute);
 
   containers.forEach((container) => {
     if (container.id == carouselBtnAttribute) {
@@ -91,7 +97,6 @@ const slideImage = (index, myBtn) => {
   });
 };
 
-
 nextBtns.forEach((next) => {
   next.addEventListener("click", (event) => {
     slideImage(currentIndex + 1, event.target);
@@ -99,7 +104,6 @@ nextBtns.forEach((next) => {
     //console.log(currentIndex + 1);
   });
 });
-
 
 previousBtns.forEach((previous) => {
   previous.addEventListener("click", (event) => {
