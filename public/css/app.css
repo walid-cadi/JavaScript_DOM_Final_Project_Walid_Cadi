@@ -11926,6 +11926,7 @@ nav .right-nav .right-nav-btn button {
   align-items: center;
   justify-content: center;
   display: none;
+  z-index: 3000;
 }
 .modal-container .modal-parent {
   background: #fff;
@@ -12336,46 +12337,46 @@ nav .right-nav .right-nav-btn button {
   font-family: amatic;
   color: #ce1212;
 }
-.sec6 .sec6-carousel {
+.sec6 .carousel-container {
   display: flex;
   width: 60vw;
   overflow: hidden;
 }
-.sec6 .sec6-carousel .box-carousel {
+.sec6 .carousel-container .box-carousel {
   display: flex;
   transition: transform 0.5s ease;
 }
-.sec6 .sec6-carousel .box-carousel button {
+.sec6 .carousel-container .box-carousel button {
   display: none;
 }
-.sec6 .sec6-carousel .box-carousel .slide {
+.sec6 .carousel-container .box-carousel .slide {
   min-width: 100%;
   border-left: 3px solid #ce1212;
   padding-left: 15px;
 }
-.sec6 .sec6-carousel .box-carousel .slide .content {
+.sec6 .carousel-container .box-carousel .slide .content {
   display: flex;
   align-items: center;
   gap: 5vw;
   width: 100%;
   height: 100%;
 }
-.sec6 .sec6-carousel .box-carousel .slide .content .content-text {
+.sec6 .carousel-container .box-carousel .slide .content .content-text {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
-.sec6 .sec6-carousel .box-carousel .slide .content .content-text h3, .sec6 .sec6-carousel .box-carousel .slide .content .content-text .h3 {
+.sec6 .carousel-container .box-carousel .slide .content .content-text h3, .sec6 .carousel-container .box-carousel .slide .content .content-text .h3 {
   font-family: amatic;
 }
-.sec6 .sec6-carousel .box-carousel .slide .content .content-text span {
+.sec6 .carousel-container .box-carousel .slide .content .content-text span {
   color: #5f6265;
 }
-.sec6 .sec6-carousel .box-carousel .slide .content .content-img {
+.sec6 .carousel-container .box-carousel .slide .content .content-img {
   width: 150px;
   height: 150px;
 }
-.sec6 .sec6-carousel .box-carousel .slide .content .content-img img {
+.sec6 .carousel-container .box-carousel .slide .content .content-img img {
   border-radius: 50%;
 }
 
@@ -12552,6 +12553,59 @@ nav .right-nav .right-nav-btn button {
     width: 100%;
   }
   .sec9 .sec9-content .sec9-content-form textarea {
+    width: 100%;
+  }
+}
+.sec11 .sec11-header p {
+  color: #5f6265;
+}
+.sec11 .sec11-header h1, .sec11 .sec11-header .h1 {
+  font-family: amatic;
+}
+.sec11 .sec11-header h1 span, .sec11 .sec11-header .h1 span {
+  font-family: amatic;
+  color: #ce1212;
+}
+.sec11 .sec11-info .sec11-info-card {
+  width: 40vw;
+  box-shadow: 2px 2px 5px #888888;
+}
+.sec11 .sec11-form {
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.red {
+  color: #ce1212;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: #ce1212;
+  color: white;
+  border-radius: 50%;
+}
+
+.btnnn {
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: #ce1212;
+  color: white;
+}
+
+@media (max-width: 428px) {
+  .sec11 {
+    margin-top: 70vh;
+  }
+  .sec11 .sec11-map {
+    margin: 0;
+  }
+  .sec11 .sec11-info {
+    margin: 0;
+  }
+  .sec11 .sec11-form:first-child {
+    flex-direction: column;
     width: 100%;
   }
 }

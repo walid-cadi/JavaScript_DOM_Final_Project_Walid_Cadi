@@ -57,10 +57,9 @@ menu.forEach((el) => {
 
 let nextBtns = document.querySelectorAll(".next");
 let previousBtns = document.querySelectorAll(".previous");
-let containers = document.querySelectorAll(".sec6-carousel");
+let containers = document.querySelectorAll(".carousel-container");
 
 
-//* sliding function
 let currentIndex = 0;
 const slideImage = (index, myBtn) => {
   let carouselBtnAttribute = myBtn.getAttribute("carouselBtn");
@@ -68,18 +67,15 @@ const slideImage = (index, myBtn) => {
 
   containers.forEach((container) => {
     if (container.id == carouselBtnAttribute) {
-      //! variables  sal7in  ghir  l lelement  li mt7a9a9 fih chart dyalna
       let slides = container.querySelectorAll(".slide");
       let camera = container.querySelector(".box-carousel");
       let slideWidth = slides[0].clientWidth;
       //let indicators = container.querySelectorAll(".indicator");
 
-      //* clikit 3la previous  o ana  aslan f awel image  khasni nmchi  l image lakhra
       if (index < 0) {
         index = slides.length - 1;
         //console.log(index);
       } else if (index >= slides.length) {
-        //* clikit 3la next o ana  aslan f akhir image khasni nrje3  l image lewla
         index = 0;
         //console.log(index);
       }
@@ -89,14 +85,13 @@ const slideImage = (index, myBtn) => {
       //});
       //indicators[index].classList.add("activeIndicator");
 
-      //* hna bach n7arek l camera dyal lcarousel
       camera.style.transform = `translateX(-${slideWidth * index}px)`;
       currentIndex = index;
     }
   });
 };
 
-//* btn dyal next
+
 nextBtns.forEach((next) => {
   next.addEventListener("click", (event) => {
     slideImage(currentIndex + 1, event.target);
@@ -105,7 +100,7 @@ nextBtns.forEach((next) => {
   });
 });
 
-//* btn dyal previous
+
 previousBtns.forEach((previous) => {
   previous.addEventListener("click", (event) => {
     slideImage(currentIndex - 1, event.target);
